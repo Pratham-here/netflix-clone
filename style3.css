@@ -15,9 +15,9 @@ body {
 }
 
 .main {
-    background-image: url("bg.jpg");
+    background-image: url("/bg.jpg");
     background-position: center center;
-    background-size: cover;
+    background-size: 1200px;
     height: 700px;
     position: relative;
     background-repeat: no-repeat;
@@ -30,7 +30,7 @@ body {
 }
 
 .main .box {
-    height: 100%;
+    height: 700px;
     width: 100%;
     background-color: black;
     opacity: 0.6;
@@ -74,8 +74,6 @@ nav button {
     padding: 0 30px;
     text-align: center;
     padding-top: 100px;
-
-
 }
 
 .hero > :first-child {
@@ -153,12 +151,12 @@ nav button {
 
 .secImg {
     position: relative;
+    width: 555px;
 }
 
 .secImg img {
     position: relative;
-    width: 100%;
-    max-width: 500px;
+    width: 555px;
     margin-top: 6px;
     z-index: 10;
 }
@@ -167,8 +165,8 @@ nav button {
     position: absolute;
     top: 106px;
     right: 89px;
-    width: 90%;
-    max-width: 465px;
+    width: 465px;
+    z-index: 9;
 }
 
 section.first > div {
@@ -286,4 +284,469 @@ section.second {
 a {
     text-decoration: underline;
     color: rgb(126, 126, 126);
+}
+
+/* Media queries for all devices */
+
+/* Small phones (up to 430px, e.g., iPhone SE, Galaxy S8+) */
+@media (max-width: 430px) {
+    .main {
+        height: 667px;
+        background-size: 375px;
+    }
+    .main .box {
+        height: 667px;
+    }
+    nav {
+        height: 50px;
+        max-width: 375px;
+        padding: 0 10px;
+    }
+    nav img {
+        width: 80px;
+        margin-top: 10px;
+    }
+    .hero {
+        height: 617px;
+        gap: 10px;
+        padding: 0 15px;
+        padding-top: 50px;
+    }
+    .hero > :first-child {
+        font-size: 24px;
+    }
+    .hero > :nth-child(2) {
+        font-size: 16px;
+    }
+    .hero > :nth-child(3) {
+        font-size: 14px;
+    }
+    .btn {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+    .btn-red {
+        padding: 6px 12px;
+        font-size: 14px;
+    }
+    .main input {
+        padding: 6px 12px;
+        font-size: 14px;
+        width: 200px;
+    }
+    .hero-buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .first {
+        max-width: 375px;
+        gap: 15px;
+        padding: 0 10px;
+    }
+    .secImg {
+        width: 300px;
+    }
+    .secImg img {
+        width: 300px;
+    }
+    .secImg video {
+        top: 80px;
+        right: 50px;
+        width: 240px;
+    }
+    section.first > div {
+        max-width: 300px;
+    }
+    section.first > div :nth-child(1) {
+        font-size: 24px;
+    }
+    section.first > div :nth-child(2) {
+        font-size: 16px;
+    }
+    .faq h2 {
+        font-size: 24px;
+        padding-top: 15px;
+    }
+    .faqbox {
+        font-size: 16px;
+        max-width: 350px;
+        padding: 10px 15px;
+    }
+    .final {
+        max-width: 375px;
+        font-size: 14px;
+        gap: 15px;
+    }
+    .final input {
+        padding: 6px 12px;
+        width: 200px;
+    }
+    .ending {
+        max-width: 300px;
+        margin: 20px auto;
+    }
+    .grid {
+        max-width: 375px;
+        font-size: 12px;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* Medium phones and small tablets (431px to 768px, e.g., iPhone 14 Pro Max, iPad Mini) */
+@media (min-width: 431px) and (max-width: 768px) {
+    .main {
+        height: 800px;
+        background-size: 600px;
+    }
+    .main .box {
+        height: 800px;
+    }
+    nav {
+        height: 60px;
+        max-width: 600px;
+        padding: 0 15px;
+    }
+    nav img {
+        width: 100px;
+        margin-top: 15px;
+    }
+    .hero {
+        height: 740px;
+        gap: 15px;
+        padding: 0 20px;
+        padding-top: 75px;
+    }
+    .hero > :first-child {
+        font-size: 36px;
+    }
+    .hero > :nth-child(2) {
+        font-size: 20px;
+    }
+    .hero > :nth-child(3) {
+        font-size: 18px;
+    }
+    .btn {
+        padding: 6px 15px;
+        font-size: 14px;
+    }
+    .btn-red {
+        padding: 6px 18px;
+        font-size: 16px;
+    }
+    .main input {
+        padding: 6px 18px;
+        font-size: 16px;
+        width: 250px;
+    }
+    .first {
+        max-width: 600px;
+        gap: 20px;
+        padding: 0 15px;
+    }
+    .secImg {
+        width: 400px;
+    }
+    .secImg img {
+        width: 400px;
+    }
+    .secImg video {
+        top: 90px;
+        right: 60px;
+        width: 320px;
+    }
+    section.first > div {
+        max-width: 400px;
+    }
+    section.first > div :nth-child(1) {
+        font-size: 36px;
+    }
+    section.first > div :nth-child(2) {
+        font-size: 20px;
+    }
+    .faq h2 {
+        font-size: 36px;
+        padding-top: 20px;
+    }
+    .faqbox {
+        font-size: 20px;
+        max-width: 500px;
+        padding: 10px 20px;
+    }
+    .final {
+        max-width: 600px;
+        font-size: 16px;
+        gap: 20px;
+    }
+    .final input {
+        padding: 6px 18px;
+        width: 250px;
+    }
+    .ending {
+        max-width: 500px;
+        margin: 30px auto;
+    }
+    .grid {
+        max-width: 600px;
+        font-size: 14px;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+/* Tablets and small laptops (769px to 1024px, e.g., iPad Pro, Surface Pro 7) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .main {
+        height: 900px;
+        background-size: 800px;
+    }
+    .main .box {
+        height: 900px;
+    }
+    nav {
+        max-width: 800px;
+        padding: 0 20px;
+    }
+    nav img {
+        width: 120px;
+        margin-top: 20px;
+    }
+    .hero {
+        height: 838px;
+        gap: 20px;
+        padding: 0 25px;
+        padding-top: 90px;
+    }
+    .hero > :first-child {
+        font-size: 42px;
+    }
+    .hero > :nth-child(2) {
+        font-size: 22px;
+    }
+    .hero > :nth-child(3) {
+        font-size: 20px;
+    }
+    .btn {
+        padding: 6px 15px;
+        font-size: 14px;
+    }
+    .btn-red {
+        padding: 6px 20px;
+        font-size: 16px;
+    }
+    .main input {
+        padding: 6px 20px;
+        font-size: 16px;
+        width: 300px;
+    }
+    .first {
+        max-width: 800px;
+        gap: 25px;
+        padding: 0 20px;
+    }
+    .secImg {
+        width: 450px;
+    }
+    .secImg img {
+        width: 450px;
+    }
+    .secImg video {
+        top: 100px;
+        right: 70px;
+        width: 360px;
+    }
+    section.first > div {
+        max-width: 450px;
+    }
+    section.first > div :nth-child(1) {
+        font-size: 42px;
+    }
+    section.first > div :nth-child(2) {
+        font-size: 22px;
+    }
+    .faq h2 {
+        font-size: 42px;
+        padding-top: 25px;
+    }
+    .faqbox {
+        font-size: 22px;
+        max-width: 600px;
+        padding: 10px 25px;
+    }
+    .final {
+        max-width: 700px;
+        font-size: 16px;
+        gap: 25px;
+    }
+    .final input {
+        padding: 6px 20px;
+        width: 300px;
+    }
+    .ending {
+        max-width: 600px;
+        margin: 40px auto;
+    }
+    .grid {
+        max-width: 800px;
+        font-size: 14px;
+    }
+}
+
+/* Large laptops, foldables folded (1025px to 1812px, e.g., Galaxy Z Fold 5 folded) */
+@media (min-width: 1025px) and (max-width: 1812px) {
+    .main {
+        height: 700px;
+        background-size: 1000px;
+    }
+    .main .box {
+        height: 700px;
+    }
+    nav {
+        max-width: 1000px;
+    }
+    nav img {
+        width: 130px;
+    }
+    .hero {
+        height: 638px;
+        gap: 22px;
+    }
+    .hero > :first-child {
+        font-size: 46px;
+    }
+    .hero > :nth-child(2) {
+        font-size: 24px;
+    }
+    .hero > :nth-child(3) {
+        font-size: 20px;
+    }
+    .btn {
+        padding: 4px 12px;
+    }
+    .btn-red {
+        padding: 6px 22px;
+    }
+    .main input {
+        padding: 6px 22px;
+        width: 350px;
+    }
+    .first {
+        max-width: 1000px;
+    }
+    .secImg {
+        width: 500px;
+    }
+    .secImg img {
+        width: 500px;
+    }
+    .secImg video {
+        top: 106px;
+        right: 80px;
+        width: 400px;
+    }
+    section.first > div {
+        max-width: 500px;
+    }
+    section.first > div :nth-child(1) {
+        font-size: 46px;
+    }
+    section.first > div :nth-child(2) {
+        font-size: 24px;
+    }
+    .faq h2 {
+        font-size: 46px;
+    }
+    .faqbox {
+        max-width: 700px;
+    }
+    .final {
+        max-width: 700px;
+    }
+    .final input {
+        width: 350px;
+    }
+    .ending {
+        max-width: 700px;
+    }
+    .grid {
+        max-width: 1000px;
+    }
+}
+
+/* Extra-large foldables and desktops (1813px and above, e.g., Galaxy Z Fold 5 unfolded, Asus Zenbook Fold) */
+@media (min-width: 1813px) {
+    .main {
+        height: 800px;
+        background-size: 1200px;
+    }
+    .main .box {
+        height: 800px;
+    }
+    nav {
+        max-width: 1200px;
+    }
+    nav img {
+        width: 140px;
+    }
+    .hero {
+        height: 738px;
+    }
+    .hero > :first-child {
+        font-size: 48px;
+    }
+    .hero > :nth-child(2) {
+        font-size: 24px;
+    }
+    .hero > :nth-child(3) {
+        font-size: 20px;
+    }
+    .btn {
+        padding: 4px 10px;
+    }
+    .btn-red {
+        padding: 6px 24px;
+    }
+    .main input {
+        padding: 6px 20px;
+        width: 400px;
+    }
+    .first {
+        max-width: 1200px;
+    }
+    .secImg {
+        width: 555px;
+    }
+    .secImg img {
+        width: 555px;
+    }
+    .secImg video {
+        top: 106px;
+        right: 89px;
+        width: 465px;
+    }
+    section.first > div {
+        max-width: 600px;
+    }
+    section.first > div :nth-child(1) {
+        font-size: 48px;
+    }
+    section.first > div :nth-child(2) {
+        font-size: 24px;
+    }
+    .faq h2 {
+        font-size: 48px;
+    }
+    .faqbox {
+        max-width: 700px;
+    }
+    .final {
+        max-width: 700px;
+    }
+    .final input {
+        width: 400px;
+    }
+    .ending {
+        max-width: 800px;
+    }
+    .grid {
+        max-width: 1200px;
+    }
 }
